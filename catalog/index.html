@@ -1,0 +1,27 @@
+---
+layout: default
+title: Catalog – Jo's Book Barn
+background: books-patrick-tomasso.jpg
+---
+<div class="container-fluid" id="catalog">
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<h1>Book Catalog</h1>
+			<hr />
+			<h4>All books $$$$$</h4>
+			<div class="row">
+				{% for book in site.data.books %}
+					<div class="card catalog-book">
+						<div class="card-body">
+							<h2 class="card-title">{{ book.title }}</h2>
+							<h3>By {{ book.author }}</h3>
+							<a href="{{ book.link }}" class="button">Buy on Ebay</a>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+</div>

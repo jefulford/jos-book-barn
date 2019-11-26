@@ -1,0 +1,170 @@
+---
+---
+
+// start content
+
+// 1: FONTS
+// 2: VARIABLES
+// 3: NAVBAR
+// 4: FOOTER
+// 5: BUTTON, TEXT + LINES
+// 6: HOME
+// 7: CATALOG
+
+																							// 1:FONTS
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Lato|Fredericka+the+Great&display=swap');
+
+																				// 2: VARIABLES
+$primary: #943b31;
+$secondary: white;
+$tertiary: #094727;
+
+$primary-font: 'Fredericka the Great';
+$secondary-font: Baskervville;
+
+
+.container-fluid {
+	padding: 100px 0px;
+	margin: 0;
+}
+
+																				// 3: NAVBAR
+div.navbar {
+	background-color: $primary;
+	padding: 10px 80px;
+	a {
+		color: $secondary;
+		font-family: $secondary-font;
+	}
+	a.navbar-brand {
+		font-family: $primary-font;
+	}
+}
+
+																					// 4: FOOTER
+footer {
+	background-color: $primary;
+	padding: 20px 80px;
+	color: $secondary;
+	font-family: $primary-font;
+	a {
+		color: $secondary;
+	}
+	a:hover {
+		color: inherit;
+		text-decoration: none;
+	}
+	span.brand {
+		font-size: 22px;
+	}
+	span a {
+		margin-left: 20px;
+	}
+	p {
+		margin-top: 20px;
+	}
+	a.button:hover {
+		color: $tertiary;
+	}
+	
+}
+
+																			// 5: BUTTON, TEXT + LINES
+		// button
+a.button, , div.catalog-book a.button, div.navbar a.button {
+	display: inline-block;
+	min-width: 80px;
+	max-width: 240px;
+	min-height: 20px;
+	line-height: 20px;
+	max-height: fit-content;
+	text-align: center;
+	border: 2px solid white;
+	padding: 4px 20px;
+	font-family: $secondary-font;
+	background-color: $secondary;
+	border-radius: 2px;
+	font-size: 16px;
+	color: $tertiary;
+	text-decoration: none;
+	margin-top: 20px;
+}
+a.button:hover {
+	opacity: .9;
+}
+		// text
+h1, h2 {
+	font-family: $primary-font;
+}
+p, h3 {
+	font-family: $secondary-font;
+}
+h2 {
+	font-size: 22px;
+}
+h3 {
+	font-size: 16px;
+	font-style: italic;
+}
+h4 {
+	font-size: 18px;
+	font-family: $secondary-font;
+}
+h1, h4 {
+	color: $secondary;
+	text-align: center;
+}
+a.link {
+	text-decoration: underline;
+}
+
+		// lines
+hr {
+	max-width: 200px;
+	border: 1px solid $secondary;
+}
+																// 6: HOME
+body #home {
+	background-image: url("barn-frances-gunn.jpg");
+	background-size: 100%;
+	text-align: center;
+	.landing {
+		background-color: #47161098;
+		padding: 40px 0px;
+	}
+	.about-contact {
+		margin: 200px 0px 0px 0px;
+		padding: 40px 20px;
+		background-color: $secondary;
+		h1, h2 {
+			color: $primary;
+		}
+		p {
+			text-align: left;
+			font-size: 16px;
+		}
+		hr {
+			border-color: $tertiary;
+		}
+		a.button {
+			background-color: $tertiary;
+			color: $secondary;
+		}
+	}
+}
+																// 7: CATALOG
+body #catalog {
+	background-image: url("books-annie-spratt.jpg");
+	background-size: 100%;
+	text-align: center;
+	div.catalog-book {
+		box-sizing: border-box; 
+		width: 28%; 
+		margin: 2.5% 2.5%;
+		text-align: center;
+	}
+	div.card {
+		background-color: $tertiary;
+		color: $secondary;
+	}
+}
